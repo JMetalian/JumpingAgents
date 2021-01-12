@@ -1,0 +1,48 @@
+{
+    "Basic": {
+        "checkpoints": [
+            {
+                "steps": 1374998,
+                "file_path": "results\\ObstacleAvoid\\Basic\\Basic-1374998.onnx",
+                "reward": null,
+                "creation_time": 1608731080.1499429
+            },
+            {
+                "steps": 1379998,
+                "file_path": "results\\ObstacleAvoid\\Basic\\Basic-1379998.onnx",
+                "reward": null,
+                "creation_time": 1608731090.3323948
+            },
+            {
+                "steps": 1384999,
+                "file_path": "results\\ObstacleAvoid\\Basic\\Basic-1384999.onnx",
+                "reward": null,
+                "creation_time": 1608731099.5026305
+            },
+            {
+                "steps": 1389997,
+                "file_path": "results\\ObstacleAvoid\\Basic\\Basic-1389997.onnx",
+                "reward": null,
+                "creation_time": 1608731108.7423272
+            },
+            {
+                "steps": 1393337,
+                "file_path": "results\\ObstacleAvoid\\Basic\\Basic-1393337.onnx",
+                "reward": null,
+                "creation_time": 1608731115.219638
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1393337,
+            "file_path": "results\\ObstacleAvoid\\Basic.onnx",
+            "reward": null,
+            "creation_time": 1608731115.219638
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0",
+        "torch_version": "1.7.0+cu110",
+        "tensorflow_version": -1
+    }
+}
