@@ -1,31 +1,28 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
 public class Jumper : Agent
 {
-    [SerializeField] private float jumpForce;
-    [SerializeField] private KeyCode jumpKey;
+    [SerializeField] private float jumpAmount;
+    [SerializeField] private KeyCode keyForJump;
     
-    private bool jumpIsReady = true;
-    private Rigidbody rBody;
-    private Vector3 startingPosition;
+    private Rigidbody rigid_Body;
+    private Vector3 initialPosition;
+    private bool isJumpReady = true;
     private int score = 0;
-    
     public event Action OnReset;
     
     public override void Initialize()
     {
-        rBody = GetComponent<Rigidbody>();
-        startingPosition = transform.position;
+        rigid_Body = GetComponent<Rigidbody>();
+        initialPosition = transform.position;
     }
 
     private void FixedUpdate()
     {
-        if(jumpIsReady)
+        if(isJumpReady)
             RequestDecision();
     }
 
@@ -44,46 +41,43 @@ public class Jumper : Agent
     {
         actionsOut[0] = 0;
         
-        if (Input.GetKey(jumpKey))
+        if (Input.GetKey(keyForJump))
             actionsOut[0] = 1;
     }
 
     private void Jump()
     {
-        if (jumpIsReady)
+        if (isJumpReady)
         {
-            rBody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.VelocityChange);
-            jumpIsReady = false;
+            rigid_Body.AddForce(new Vector3(0, jumpAmount, 0), ForceMode.VelocityChange);
+            isJumpReady = false;
         }
     }
     
     private void Reset()
     {
         score = 0;
-        jumpIsReady = true;
-        
-        //Reset Movement and Position
-        transform.position = startingPosition;
-        rBody.velocity = Vector3.zero;
-        
+        isJumpReady = true;
+        transform.position = initialPosition;
+        rigid_Body.velocity = Vector3.zero;
         OnReset?.Invoke();
     }
 
-    private void OnCollisionEnter(Collision collidedObj)
+    private void OnCollisionEnter(Collision coll)
     {
-        if (collidedObj.gameObject.CompareTag("Street"))
-            jumpIsReady = true;
+        if (coll.gameObject.CompareTag("Street"))
+            isJumpReady = true;
         
-        else if (collidedObj.gameObject.CompareTag("Mover") || collidedObj.gameObject.CompareTag("DoubleMover"))
+        else if (coll.gameObject.CompareTag("Mover") || coll.gameObject.CompareTag("DoubleMover"))
         {
             AddReward(-1.0f);
             EndEpisode();
         }
     }
 
-    private void OnTriggerEnter(Collider collidedObj)
+    private void OnTriggerEnter(Collider coll)
     {
-        if (collidedObj.gameObject.CompareTag("score"))
+        if (coll.gameObject.CompareTag("score"))
         {
             AddReward(0.1f);
             score++;

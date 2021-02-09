@@ -226,8 +226,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &49896449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -509,8 +509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &86387684
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,8 +558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &88742141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!4 &160079807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521296116772160, guid: 70d695e1d8399400bb0f2873bdf29bb0,
@@ -1492,8 +1492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &237062344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,8 +2322,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &363755466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2666,8 +2666,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &445713939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3168,8 +3168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &584367269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 612d6fd68eed945d284be6042cc92ca9,
@@ -3612,8 +3612,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &696180296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4118,8 +4118,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &791752142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5028,8 +5028,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &930555761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5318,8 +5318,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &961345721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5591,8 +5591,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1018207643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5725,8 +5725,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1022399672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6210,8 +6210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!850595691 &1086667269
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -6320,8 +6320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1103338909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,8 +6437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!4 &1111190587
 Transform:
   m_ObjectHideFlags: 0
@@ -6682,8 +6682,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1142726333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7234,8 +7234,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1297951502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7297,8 +7297,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!114 &1313390099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7891,8 +7891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1408576745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7996,8 +7996,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1408576750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8227,8 +8227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1441768063
 GameObject:
   m_ObjectHideFlags: 0
@@ -8468,8 +8468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1478581263
 GameObject:
   m_ObjectHideFlags: 0
@@ -9025,8 +9025,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1602629833
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,8 +9126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1628000217
 GameObject:
   m_ObjectHideFlags: 0
@@ -9271,8 +9271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1640513546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10118,8 +10118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1877887176
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,8 +10269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 4417169525432353905, guid: c7301666fd2134c83ae82778a3b71552, type: 3}
-  minSpawnIntervalInSeconds: 1
-  maxSpawnIntervalInSeconds: 3
+  minSpawningInterval: 1
+  maxSpawningInterval: 3
 --- !u!1 &1897318919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 612d6fd68eed945d284be6042cc92ca9,
@@ -10734,8 +10734,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &1980048468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10989,8 +10989,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &2063106547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11123,8 +11123,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 27
-  jumpKey: 32
+  jumpAmount: 30
+  keyForJump: 32
 --- !u!65 &2065898413
 BoxCollider:
   m_ObjectHideFlags: 0

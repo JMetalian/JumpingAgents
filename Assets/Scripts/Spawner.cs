@@ -1,40 +1,35 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-
-/*
- * Spawns the Mover Objects (Enemies) with an interval you determine.
- */
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> spawnableObjects;
-    
-    [Tooltip("The Spawner waits a random number of seconds between these two interval each time a object was spawned.")]
-    [SerializeField] private float minSpawnIntervalInSeconds;
-    [SerializeField] private float maxSpawnIntervalInSeconds;
+    [Tooltip("Waiting amount for spawner.")]
+    [SerializeField] private float minSpawningInterval;
+    [SerializeField] private float maxSpawningInterval;
 
-    private Jumper jumper;
+    private Jumper agent;
     private List<GameObject> spawnedObjects = new List<GameObject>();
 
     private void Awake()
     {
-        jumper = GetComponentInChildren<Jumper>();
-        //Subscribes to Reset of Player
-        jumper.OnReset += DestroyAllSpawnedObjects;
-        
+        agent = GetComponentInChildren<Jumper>();
+        agent.OnReset += DestroyAllSpawnedObjects; 
         StartCoroutine(nameof(Spawn));
     }
-    
     private IEnumerator Spawn()
     {
-        var spawned = Instantiate(GetRandomSpawnableFromList(), transform.position, transform.rotation, transform);
-        spawnedObjects.Add(spawned);
-        
-        yield return new WaitForSeconds(Random.Range(minSpawnIntervalInSeconds, maxSpawnIntervalInSeconds));
+        var obstacleSpawned = Instantiate(GetRandomSpawnableFromList(), transform.position, transform.rotation, transform);
+        spawnedObjects.Add(obstacleSpawned);
+        yield return new WaitForSeconds(Random.Range(minSpawningInterval, maxSpawningInterval));
         StartCoroutine(nameof(Spawn));
+    }
+    private GameObject GetRandomSpawnableFromList()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, spawnableObjects.Count);
+        return spawnableObjects[randomIndex];
     }
     private void DestroyAllSpawnedObjects()
     {
@@ -43,10 +38,5 @@ public class Spawner : MonoBehaviour
             Destroy(spawnedObjects[i]);
             spawnedObjects.RemoveAt(i);
         }
-    }
-    private GameObject GetRandomSpawnableFromList()
-    {
-        int randomIndex = UnityEngine.Random.Range(0, spawnableObjects.Count);
-        return spawnableObjects[randomIndex];
     }
 }
